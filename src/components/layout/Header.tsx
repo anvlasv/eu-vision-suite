@@ -6,10 +6,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { href: '/#services', label: 'Услуги' },
-  { href: '/#countries', label: 'Страны' },
-  { href: '/#process', label: 'Как мы работаем' },
   { href: '/#about', label: 'О нас' },
-  { href: '/#faq', label: 'FAQ' },
+  { href: '/#guarantees', label: 'Гарантии' },
+  { href: '/#contact', label: 'Контакты' },
 ];
 
 export function Header() {
