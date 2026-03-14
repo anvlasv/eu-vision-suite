@@ -61,7 +61,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+7800000000" className={`flex items-center gap-2 font-medium ${showTransparent ? 'text-white' : 'text-foreground'}`}>
+          <a href="tel:+7800000000" className="flex items-center gap-2 font-medium text-primary-foreground">
             <Phone className="w-4 h-4" />
             <span>+7 (800) 000-00-00</span>
           </a>
