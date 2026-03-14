@@ -33,22 +33,16 @@ export function Header() {
     }
   };
 
-  const showTransparent = isHome && !isScrolled;
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        showTransparent
-          ? 'bg-transparent py-5'
-          : 'bg-background/95 backdrop-blur-md shadow-md py-3'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-primary py-3 shadow-md"
     >
       <div className="container-wide flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-primary">
             <Star className="w-5 h-5 text-accent fill-accent" />
           </div>
-          <span className={`font-display text-xl font-bold transition-colors ${showTransparent ? 'text-white' : 'text-foreground'}`}>
+          <span className="font-display text-xl font-bold text-primary-foreground">
             LCC
           </span>
         </Link>
@@ -59,11 +53,7 @@ export function Header() {
               key={link.href}
               to={link.href}
               onClick={() => handleNavClick(link.href)}
-              className={`font-medium transition-colors link-underline ${
-                showTransparent
-                  ? 'text-white/90 hover:text-white'
-                  : 'text-foreground hover:text-primary'
-              }`}
+              className="font-medium transition-colors link-underline text-primary-foreground/90 hover:text-accent"
             >
               {link.label}
             </Link>
@@ -71,18 +61,18 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+7800000000" className={`flex items-center gap-2 font-medium ${showTransparent ? 'text-white' : 'text-foreground'}`}>
+          <a href="tel:+7800000000" className="flex items-center gap-2 font-medium text-primary-foreground">
             <Phone className="w-4 h-4" />
             <span>+7 (800) 000-00-00</span>
           </a>
-          <Button variant={showTransparent ? 'hero' : 'default'} size="lg" asChild>
+          <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
             <a href={isHome ? '#contact' : '/#contact'}>Консультация</a>
           </Button>
         </div>
 
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`lg:hidden p-2 ${showTransparent ? 'text-white' : 'text-foreground'}`}
+          className="lg:hidden p-2 text-primary-foreground"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
