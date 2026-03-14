@@ -53,11 +53,7 @@ export function Header() {
               key={link.href}
               to={link.href}
               onClick={() => handleNavClick(link.href)}
-              className={`font-medium transition-colors link-underline ${
-                showTransparent
-                  ? 'text-white/90 hover:text-white'
-                  : 'text-foreground hover:text-primary'
-              }`}
+              className="font-medium transition-colors link-underline text-primary-foreground/90 hover:text-accent"
             >
               {link.label}
             </Link>
