@@ -51,13 +51,12 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-32 h-32 rounded-full bg-primary/10 mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-16 h-16 text-primary/40" />
-                </div>
-                <p className="text-muted-foreground text-sm">Фото основателя</p>
-              </div>
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
+              <img
+                src={founderPhoto}
+                alt="Основатель LCC"
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
         </div>
