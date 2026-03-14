@@ -65,7 +65,7 @@ export function Header() {
             <Phone className="w-4 h-4" />
             <span>+7 (800) 000-00-00</span>
           </a>
-          <Button variant={showTransparent ? 'hero' : 'default'} size="lg" asChild>
+          <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
             <a href={isHome ? '#contact' : '/#contact'}>Консультация</a>
           </Button>
         </div>
