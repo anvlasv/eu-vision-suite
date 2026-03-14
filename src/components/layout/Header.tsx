@@ -42,7 +42,7 @@ export function Header() {
           <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-primary">
             <Star className="w-5 h-5 text-accent fill-accent" />
           </div>
-          <span className={`font-display text-xl font-bold transition-colors ${showTransparent ? 'text-white' : 'text-foreground'}`}>
+          <span className="font-display text-xl font-bold text-primary-foreground">
             LCC
           </span>
         </Link>
