@@ -33,7 +33,7 @@ const contactInfo = [
 
 export function Contact() {
   return (
-    <section id="contact" className="section-padding bg-primary">
+    <section id="contact" className="section-padding bg-muted/30">
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Column - Info */}
@@ -46,10 +46,10 @@ export function Contact() {
             <span className="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
               <span>★</span> Связаться с нами
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Получите бесплатную консультацию
             </h2>
-            <p className="text-white/80 text-lg mb-10">
+            <p className="text-muted-foreground text-lg mb-10">
               Оставьте заявку, и наш специалист свяжется с вами в течение 15 минут
               для обсуждения вашей ситуации
             </p>
@@ -64,13 +64,13 @@ export function Contact() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-center gap-4 text-white hover:text-accent transition-colors group"
+                  className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 transition-all">
                     <item.icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-sm">{item.label}</div>
+                    <div className="text-muted-foreground text-sm">{item.label}</div>
                     <div className="font-semibold">{item.value}</div>
                   </div>
                 </motion.a>
@@ -85,7 +85,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form className="bg-white rounded-2xl p-6 lg:p-8 shadow-2xl">
+            <form className="bg-card rounded-2xl p-6 lg:p-8 shadow-lg border border-border">
               <h3 className="font-display text-2xl font-bold text-foreground mb-6">
                 Заявка на консультацию
               </h3>
