@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Target, Scale, Banknote, Lock, ClipboardCheck, Users } from 'lucide-react';
+import founderPhoto from '@/assets/founder-photo.png';
 
 const values = [
   { icon: Target, title: 'Результат в любой ситуации', description: 'Безвыходных ситуаций для нас не существует — всегда найдём альтернативный вариант.' },

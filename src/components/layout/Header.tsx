@@ -72,7 +72,7 @@ export function Header() {
 
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`lg:hidden p-2 ${showTransparent ? 'text-white' : 'text-foreground'}`}
+          className="lg:hidden p-2 text-primary-foreground"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
