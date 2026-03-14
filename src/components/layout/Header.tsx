@@ -33,15 +33,9 @@ export function Header() {
     }
   };
 
-  const showTransparent = isHome && !isScrolled;
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        showTransparent
-          ? 'bg-transparent py-5'
-          : 'bg-background/95 backdrop-blur-md shadow-md py-3'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-primary py-3 shadow-md"
     >
       <div className="container-wide flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
